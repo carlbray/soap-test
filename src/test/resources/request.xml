@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"
+            xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+    <SOAP-ENV:Header>
+        <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"
+                       xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+                       S:mustUnderstand="1">
+            <wsse:UsernameToken wsu:Id="UsernameToken-b8998130-0a5d-4ce7-ab70-49a623263d24">
+                <wsse:Username>userName</wsse:Username>
+                <wsse:Password
+                        Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordDigest">
+                    6DtjZGq2LRuJnqJXDx/FBW1BjZY=
+                </wsse:Password>
+                <wsse:Nonce
+                        EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary">
+                    GSQjv9dqOwOC0uEYtnjWgA==
+                </wsse:Nonce>
+                <wsu:Created>2018-04-29T05:01:17.891Z</wsu:Created>
+            </wsse:UsernameToken>
+        </wsse:Security>
+    </SOAP-ENV:Header>
+    <S:Body xmlns="http://www.27seconds.com/Holidays/US/Dates/">
+        <GetAbrahamLincolnsBirthday xmlns="http://www.27seconds.com/Holidays/US/Dates/">
+            <year>1969</year>
+        </GetAbrahamLincolnsBirthday>
+    </S:Body>
+</S:Envelope>
